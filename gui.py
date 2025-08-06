@@ -23,7 +23,7 @@ class URLScannerGUI:
         self.pause_event = Event()
         self.cancel_event = Event()
         self.settings = {
-            "vt_api_key": DEFAULT_VT_API_KEY,
+            # "vt_api_key": DEFAULT_VT_API_KEY,
             "timeout": 5,
             "heuristics_sensitivity": 1
         }
@@ -157,7 +157,7 @@ class URLScannerGUI:
                 time.sleep(0.3)
             futures.append(self.scan_thread.submit(
                 scan_url, url,
-                self.settings["vt_api_key"],
+                # self.settings["vt_api_key"],
                 self.settings["heuristics_sensitivity"],
                 self.settings["timeout"]
             ))

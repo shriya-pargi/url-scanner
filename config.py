@@ -1,7 +1,8 @@
 from threading import Lock, Event
 
 
-DEFAULT_VT_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
+# DEFAULT_VT_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
+# key for  further scalability of the project (when making virustotal)
 NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 vt_cache = {}
 nvd_cache = {}
