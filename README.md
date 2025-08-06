@@ -206,4 +206,4 @@ MIT License — Use, copy, modify freely for non-commercial and commercial purpo
 
 ---
 
-© 2024 Threatify Authors
+© 2025 Shriya Pargi
