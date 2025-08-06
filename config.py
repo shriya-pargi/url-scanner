@@ -1,9 +1,12 @@
 from threading import Lock, Event
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
-# DEFAULT_VT_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
-# key for  further scalability of the project (when making virustotal)
-NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+VT_API_KEY = os.getenv("VT_API_KEY")
+NVD_API_URL = os.getenv("NVD_API_URL")
+
 vt_cache = {}
 nvd_cache = {}
 cache_lock = Lock()
