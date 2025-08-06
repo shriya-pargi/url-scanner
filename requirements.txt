@@ -1,0 +1,5 @@
+ttkthemes
+requests
+python-whois
+python-dotenv
+reportlab
